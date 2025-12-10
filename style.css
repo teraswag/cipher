@@ -92,6 +92,9 @@ button:disabled {
   height: 4vh;
   font-size: 3vh;
 }
+.status {
+  font-size: 3vh;
+}
 .cog svg {
   height: 100%;
   width: 100%;
