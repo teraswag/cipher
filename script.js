@@ -44,7 +44,7 @@ function setenccode() {
   }
   timmeh = setTimeout(function() {
     document.querySelector(".status").innerHTML = "";
-  }, 200)
+  }, 1000)
 }
 function closePopup() {
   document.querySelector(".popup2").className = "nodisp";
