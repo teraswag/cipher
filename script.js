@@ -1,5 +1,6 @@
 var r = document.querySelector(":root");
 let enc = 10;
+let outputMode = 'spit';
 function encrypt_text(plain, key) {
   let out = [];
   for (let i = 0; i < plain.length; i++) {
@@ -45,6 +46,12 @@ function setenccode() {
   timmeh = setTimeout(function() {
     document.querySelector(".status").innerHTML = "";
   }, 1000)
+}
+function spit() {
+  outputMode = 'spit';
+}
+function inline() {
+  outputMode = 'inline';
 }
 function closePopup() {
   document.querySelector(".popup2").className = "nodisp";
