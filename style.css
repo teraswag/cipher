@@ -59,6 +59,7 @@ button {
 }
 h1 {
   margin-bottom: 2vh;
+  font-weight: 900;
 }
 button:disabled {
   border: 1px solid var(--ds);
