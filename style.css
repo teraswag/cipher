@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway");
 @import url("https://fonts.googleapis.com/css?family=Pacifico");
 @import url("https://fonts.googleapis.com/css?family=Nabla");
-@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
 @import url("https://fonts.googleapis.com/css?family=Pirata+One");
 @import url("https://fonts.googleapis.com/css?family=Alumni+Sans+Pinstripe");
 :root {
@@ -12,7 +12,7 @@
   --md: #ccc;
   --ds: #5a5a5a;
   --wr: #f00;
-  --fnt: "Lato", sans-serif;
+  --fnt: "Montserrat", sans-serif;
 }
 * {
   margin: 0;
@@ -210,8 +210,8 @@ input[type="number"] {
 .purple {
   background: #55028a;
 }
-.lato {
-  font-family: "Lato", sans-serif;
+.mont {
+  font-family: "Montserrat", sans-serif;
 }
 .serif {
   font-family: "Noto Serif", serif;

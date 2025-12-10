@@ -96,7 +96,7 @@ function purpleTheme() {
   r.style.setProperty("--fg", "#fff");
   r.style.setProperty("--wr", "#f00");
 }
-function latoFont() {
+function montFont() {
   r.style.setProperty("--fnt", "'Lato', sans-serif");
 }
 function notoFont() {
