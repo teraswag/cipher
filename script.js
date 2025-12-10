@@ -37,7 +37,14 @@ function setenccode() {
   if (+document.querySelector(".nummywummy").value >= 0 && +document.querySelector(".nummywummy").value <= 1000) {
     enc = +document.querySelector(".nummywummy").value;
     document.querySelector(".nummywummy").value = "";
+    document.querySelector(".status").innerHTML = "Success!";
   }
+  else {
+    document.querySelector(".status").innerHTML = "Invalid!";
+  }
+  timmeh = setTimeout(function() {
+    document.querySelector(".status").innerHTML = "";
+  }, 200)
 }
 function closePopup() {
   document.querySelector(".popup2").className = "nodisp";
