@@ -86,15 +86,18 @@ button:disabled {
   cursor: pointer;
 }
 .cont .inliner {
-  width: 25%;
+  width: 50%;
 }
 .cont .inliner * {
   width: 100%;
   height: 4vh;
   font-size: 3vh;
 }
-.status, .output {
+.status{
   font-size: 3vh;
+}
+.output {
+  font-size: 1vh;
 }
 .cog svg {
   height: 100%;

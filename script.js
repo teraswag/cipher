@@ -29,10 +29,21 @@ function decrypt_text(hexstr, key) {
   return out.join("");
 }
 function encode() {
-  document.querySelector(".enctext").value = encrypt_text(document.querySelector(".enctext").value, enc); 
+  if (outputMode == "inline") {
+    document.querySelector(".enctext").value = encrypt_text(document.querySelector(".enctext").value, enc); 
+  }
+  else if (outputMode == "spit") {
+    document.querySelector(".output").value = encrypt_text(document.querySelector(".output").value, enc); 
+  }
 }
+  
 function decode() {
-  document.querySelector(".dectext").value = decrypt_text(document.querySelector(".dectext").value, enc); 
+  if (outputMode == "inline") {
+    document.querySelector(".dectext").value = decrypt_text(document.querySelector(".dectext").value, enc); 
+  }
+  else if (outputMode == "spit") {
+    document.querySelector(".output").value = decrypt_text(document.querySelector(".output").value, enc); 
+  }
 }
 function setenccode() {
   if (+document.querySelector(".nummywummy").value >= 0 && +document.querySelector(".nummywummy").value <= 1000) {
