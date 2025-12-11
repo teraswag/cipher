@@ -33,7 +33,7 @@ function encode() {
     document.querySelector(".enctext").value = encrypt_text(document.querySelector(".enctext").value, enc); 
   }
   else if (outputMode == "spit") {
-    document.querySelector(".output").value = encrypt_text(document.querySelector(".output").value, enc); 
+    document.querySelector(".output").innerHTML = encrypt_text(document.querySelector(".enctext").value, enc); 
   }
 }
   
@@ -42,7 +42,7 @@ function decode() {
     document.querySelector(".dectext").value = decrypt_text(document.querySelector(".dectext").value, enc); 
   }
   else if (outputMode == "spit") {
-    document.querySelector(".output").value = decrypt_text(document.querySelector(".output").value, enc); 
+    document.querySelector(".output").innerHTML = decrypt_text(document.querySelector(".dectext").value, enc); 
   }
 }
 function setenccode() {
